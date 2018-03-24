@@ -1,4 +1,5 @@
-﻿using System;
+﻿//CONFIRMED from victoriakaramanova
+using System;
 using System.Linq;
 
 namespace Problem_2
@@ -7,9 +8,10 @@ namespace Problem_2
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            Console.WriteLine("{0:f2}",(decimal.Parse(input) * 1.60934m));
-
+            //The user inputs the miles to convert to kilometers
+            string entry = Console.ReadLine();
+            //The result is printed
+            Console.WriteLine("{0:f2}",(decimal.Parse(entry) * 1.60934m));
         }
     }
 }
