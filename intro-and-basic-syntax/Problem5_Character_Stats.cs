@@ -1,4 +1,5 @@
-﻿using System;
+﻿//CONFIRMED from victoriakaramanova
+using System;
 using System.Collections.Generic;
 
 namespace Problem5
@@ -9,17 +10,23 @@ namespace Problem5
         {
             string name = Console.ReadLine();
             int count = 0;
-            List<int> imput = new List<int>();
+            //the user's entries will be assigned to a list
+            List<int> input = new List<int>();
             while (count < 4)
             {
-                imput.Add(int.Parse(Console.ReadLine()));
+                input.Add(int.Parse(Console.ReadLine()));
                 count++;
             }
-            string health = new String('|', imput[0]);
-            string maxHealth = new String('.', imput[1] - imput[0]);
-            string energy = new String('|', imput[2]);
-            string maxEnergy = new String('.', imput[3] - imput[2]);
+            string health = new String('|', input[0]);
+            //here the maxHealth is calculated as a difference
+            //bw the second and the first entry, not standalone
+            string maxHealth = new String('.', input[1] - input[0]);
+            string energy = new String('|', input[2]);
+            //again, the maxEnergy is calculated as a difference
+            //bw the fourth and the third entry, not standalone
+            string maxEnergy = new String('.', input[3] - input[2]);
 
+            //The result is printed on the console
             Console.WriteLine("Name: {0}", name);
             Console.WriteLine("Health: |{0}{1}|", health, maxHealth);
             Console.WriteLine("Health: |{0}{1}|", energy, maxEnergy);
