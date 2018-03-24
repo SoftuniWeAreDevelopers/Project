@@ -13,8 +13,8 @@ namespace homework
             for (int i = 0; i < 4; i++)
             {
                 //The user enters 4 times sequence of digits
-                var hello = Console.ReadLine();
-                input.Add(hello);
+                var text = Console.ReadLine();
+                input.Add(text);
             }
             for (int i = 0; i < input.Count; i++)
             {
