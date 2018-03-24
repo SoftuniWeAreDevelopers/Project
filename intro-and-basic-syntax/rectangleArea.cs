@@ -2,13 +2,18 @@
 
 namespace RectangleArea
 {
-    class Program
+    class Problem2_Rectangle_Area
     {
         static void Main(string[] args)
         {
-           double width= double.Parse(Console.ReadLine());
+            /* we take the input parameters from the console */
+            double width  = double.Parse(Console.ReadLine());
             double height = double.Parse(Console.ReadLine());
+            
+            /* the resulting area is calculated */
             double area = width * height;
+            
+            /* the result is formated to the second digit after the dot */
             Console.WriteLine($"{area:F2}");
         }
     }
